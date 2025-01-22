@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, sans-serif;
+    color: #444;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Verdana, sans-serif;
+    color: #555;
+}
+
+.paragraph {
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #ece6f2;
+    width: 800px;
+    border-top: 8px solid #cbc7ea;
+    border-radius: 20px;
+}
+
+.quote {
+    margin: 10px 0;
+}
+
+.character {
+    font-weight: bold;
+    color: #370f38;
+}
+
+.dialogue {
+    margin-left: 5px;
+}
+
+.description {
+    font-style: italic;
+    color: #8c8196;
+}
