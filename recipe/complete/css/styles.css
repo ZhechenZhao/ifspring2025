@@ -1,0 +1,175 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #fffce8;
+}
+
+.summary {
+    position: relative; 
+    text-align: center; 
+    color: white;
+}
+
+.summary .image {
+    position: relative;
+    display: inline-block;
+}
+
+.summary .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 16px; 
+}
+
+.summary .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+
+.summary h1,.summary h3,.summary h4 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+    box-sizing: border-box; 
+}
+
+.summary h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    width: 50%;
+    top: 27%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.summary h3 {
+    bottom: 30%; 
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-weight: 400;
+    width: 80%;
+}
+
+.summary h4 {
+    bottom: 20%; 
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    width: 80%;
+}
+
+.image p {
+    font-size: 10px;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.image:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ingredients .image {
+    margin-top: 10px;
+}
+
+#ingredients ul {
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#ingredients ul li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+#ingredients ul li div:first-child {
+    font-weight: bold;
+}
+
+#ingredients ul li:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#ingredients ul li:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#tools > ul {
+    padding-left: 30px;
+}
+
+#instructions {
+    margin-bottom: 50px;
+}
+
+.instructions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.instructions-container > .step {
+    width: 46%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.step > ul {
+    padding-left: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0px 0px 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .instructions-container > .step {
+        width: 100%;
+    }
+
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+.group {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+}
+
