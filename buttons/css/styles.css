@@ -1,0 +1,493 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.button_container {
+    display: flex;
+    float: left;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46, 191, 236);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ebfec', endColorstr='#28a5cb', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+a#btn_npr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.npr-letter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.npr-n {
+    background-color: rgb(240, 52, 52);
+}
+
+.npr-p {
+    background-color: black;
+}
+
+.npr-r {
+    background-color: rgb(57, 156, 237);
+}
+
+.npr-char {
+    color: white;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.npr-n .npr-char {
+    transition-delay: 0s;
+}
+
+.npr-p .npr-char {
+    transition-delay: 0.1s;
+}
+
+.npr-r .npr-char {
+    transition-delay: 0.2s;
+}
+
+a#btn_npr:hover .npr-n .npr-char {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+a#btn_npr:hover .npr-p .npr-char {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+a#btn_npr:hover .npr-r .npr-char {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@font-face {
+    font-family: "Cygnet";
+    src: url('../fonts/Cygnet.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+a#btn_newyorker {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 240px;
+    margin: auto;
+    background-color: white;
+    text-decoration: none;
+    overflow: hidden;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.ny-icon {
+    height: 120px;
+    width: auto;
+    transition: transform 0.4s ease;
+    z-index: 1;
+    position: absolute;
+    bottom: 16px;
+}
+
+.ny-text {
+    position: absolute;
+    top: 76%;
+    transform: translateY(-120px);
+    opacity: 0;
+    color: black;
+    font-family: "Cygnet", serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-align: center;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 2;
+}
+
+.ny-the {
+    font-family: "Cygnet", serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.ny-name {
+    font-family: "Cygnet", serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.word-new {
+    margin-right: 2px;
+}
+
+a#btn_newyorker:hover .ny-text {
+    transform: translateY(-180px);
+    opacity: 1;
+}
+
+a#btn_newyorker:hover .ny-icon {
+    transform: scale(1.05);
+}
+
+.ny-the,
+.word-new,
+.word-yorker {
+    display: inline-block;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.ny-the {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.word-new,
+.word-yorker {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+a#btn_newyorker:hover .ny-the {
+
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+a#btn_newyorker:hover .word-new {
+
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+a#btn_newyorker:hover .word-yorker {
+
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+
+
+
+
+
+a#btn_apple {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    margin-top: 80px;
+    padding: 8px 16px;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    transition: all 0.2s;
+    width: 100px;
+    height: 100px;
+}
+
+#apple_whole {
+    position: relative;
+    z-index: 1;
+}
+
+#apple_circle {
+    position: absolute;
+    top: 35px;
+    left: 48px;
+    color: white;
+    font-size: 8px;
+    transition: all 0.5s ease;
+    z-index: 2;
+    opacity: 1;
+}
+
+a#btn_apple:hover #apple_circle {
+    top: 35px;
+    left: 80px;
+    font-size: 20px;
+    opacity: 1;
+}
+
+
+
+a#btn_harley {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    padding: 16px 24px;
+    background-color: #fb6012;
+    color: black;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all 0.2s;
+    overflow: hidden;
+    width: 300px;
+    height: 120px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.harley-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.harley-prefix {
+    margin-bottom: 4px;
+}
+
+.harley-suffix-wrapper {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.harley-suffix {
+    opacity: 0.3;
+    transition: opacity 0.3s ease 0.3s;
+    z-index: 1;
+    padding-left: 0em;
+}
+
+.harley-bike {
+    position: absolute;
+    opacity: 0;
+    left: -50px;
+    font-size: 26px;
+    color: black;
+    z-index: 2;
+    transform: translateX(0);
+    animation: none;
+}
+
+a#btn_harley:hover .harley-bike {
+    opacity: 1;
+    animation: bike-slide 0.3s ease-out forwards;
+}
+
+a#btn_harley:hover .harley-suffix {
+    opacity: 1;
+}
+
+@keyframes bike-slide {
+    0% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(240px);
+    }
+    100% {
+        transform: translateX(230px);
+    }
+}
+
+#btn_coca-cola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #e41b13;
+    width: 300px;
+    height: 120px;
+    padding: 16px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn_coca-cola:hover {
+    background-color: #e41b13;
+    transform: scale(1.05);
+}
+
+.coca-cola-icon {
+    height: 60px;
+    width: auto;
+    transition: filter 0.3s ease;
+}
+
+#btn_coca-cola:hover .coca-cola-icon {
+    filter: brightness(0) invert(1);
+}
