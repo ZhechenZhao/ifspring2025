@@ -1,0 +1,41 @@
+.group {
+    display: flex;
+    align-items: start
+}
+
+.mobile {
+    margin: 10px;
+    width: 15%;
+    object-fit: contain;
+}
+
+.desktop {
+    margin: 10px;
+    width: 60%;
+    object-fit: contain;
+}
+
+/* #g1 > .desktop {
+    width: 30%;
+}
+
+#g2 > .desktop {
+    width: 30%;
+} */
+
+body {
+    background-color: black;
+}
+
+h1, h2 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.section {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
