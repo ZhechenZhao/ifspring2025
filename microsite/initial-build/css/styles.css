@@ -1,0 +1,151 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fdf6e3;
+    color: #2f2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav {
+    position: sticky;
+    top: 40px;
+    z-index: 1000;
+
+    background-color: #4a2e1f;
+    color: white;
+    padding: 20px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    border-bottom: 5px solid #ff7445;
+}
+
+nav a {
+    color: #ff7445;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: white;
+} */
+
+
+
+nav {
+    position: sticky;
+    top: 40px;
+    z-index: 1000;
+
+    background-color: #4a2e1f;
+    color: white;
+    padding: 20px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ff7445;
+    width: fit-content;
+    gap: 140px;
+
+    height: auto;
+}
+
+
+.nav-group {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ff7445;
+    text-decoration: none;
+    font-family: "Lacquer", system-ui;
+    font-size: 16px;
+    line-height: 1;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a.active {
+    color: #fdf6e3;
+}
+
+.nav-logo {
+    position: absolute;
+    height: 100px;
+    left: 46%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.text-section h1 {
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-section img {
+    max-width: 90%;
+    height: auto;
+}
+
+footer {
+    background-color: #4a2e1f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+.multi-column-list {
+    column-count: 4;
+    column-gap: 40px;
+    padding: 20px;
+    list-style-type: disc;
+}
