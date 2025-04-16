@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conclusion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lacquer&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-top">
+            <img class="nav-logo" src="images/Logo.png" alt="Folklore Logo" />
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+      
+        <div class="nav-group" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="verbal-tradition.html">Verbal Tradition</a>
+          <a href="customs.html">Customs</a>      
+          <a href="childlore-and-games.html">Childlore and Games</a>
+          <a href="conclusion.html" class="active">Conclusion</a>
+          <a href="sources.html">Sources</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Conclusion</h1>
+            <p>
+                Folklore weaves together the customs, beliefs, stories, and artistic expressions that communities pass down through generations. It reflects how people make sense of the world, preserve their identities, and connect with one another through shared traditions. Whether told around a fire, celebrated in a dance, or whispered as a superstition, folklore shapes culture in both subtle and powerful ways.
+              </p>
+              <p>
+                While often rooted in the past, folklore continues to evolve. It adapts to new contexts and technologies, yet still carries the voice of the people. From age-old myths to modern urban legends, the stories we tell—and how we tell them—offer a window into our collective imagination and values.
+              </p>
+              <p>
+                Exploring folklore reminds us that tradition is not static. It's a living, breathing part of culture—one that invites participation, creativity, and meaning across time and place.
+              </p>
+        </div>
+
+        <div class="image-section">
+            <img src="images/image 1.png" alt="Folklore Illustration">
+        </div>
+    </div>
+
+    <footer>
+        Designed by Leon Zhao - Interaction Foundations Spring 2025
+    </footer>
+
+</body>
+<script>
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('show');
+    }
+</script>
+</html>
