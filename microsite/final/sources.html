@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sources</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lacquer&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-top">
+          <img class="nav-logo" src="images/Logo.png" alt="Folklore Logo" />
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+      
+        <div class="nav-group" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="verbal-tradition.html">Verbal Tradition</a>
+          <a href="customs.html">Customs</a>
+          <a href="childlore-and-games.html">Childlore and Games</a>
+          <a href="conclusion.html">Conclusion</a>
+          <a href="sources.html" class="active">Sources</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Sources</h1>
+            <p>
+                The content presented on this site is informed by a variety of publicly available resources, with particular reference to the <em>Wikipedia</em> article on <strong>Folklore</strong>. This article provided foundational knowledge on the scope, categories, and cultural significance of folklore across societies.
+            </p>
+            <p>
+                All images and visual references are used under fair use or creative commons licenses.
+              </p>
+        </div>
+
+        <div class="image-section">
+            <img src="images/Sources 1.jpg" alt="Folklore Illustration">
+        </div>
+    </div>
+
+    <footer>
+        Designed by Leon Zhao - Interaction Foundations Spring 2025
+    </footer>
+
+</body>
+<script>
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('show');
+    }
+    document.querySelectorAll(".nav-group a").forEach(link => {
+    const chars = link.textContent.trim().split("");
+    link.innerHTML = chars.map((char, i) => `<span style="--i:${i}">${char}</span>`).join("");
+    });
+</script>
+</html>

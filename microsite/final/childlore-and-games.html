@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Childlore And Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lacquer&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-top">
+            <img class="nav-logo" src="images/Logo.png" alt="Folklore Logo" />
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+      
+        <div class="nav-group" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="verbal-tradition.html">Verbal Tradition</a>
+          <a href="customs.html">Customs</a>      
+          <a href="childlore-and-games.html" class="active">Childlore and Games</a>
+          <a href="conclusion.html">Conclusion</a>
+          <a href="sources.html">Sources</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Childlore And Games</h1>
+            <p>
+                Childlore is a distinct branch of folklore that deals with activities passed on by children to other children, away from the influence or supervision of an adult. Children's folklore contains artifacts from all the standard folklore genres of verbal, material, and customary lore; it is however the child-to-child conduit that distinguishes these artifacts. For childhood is a social group where children teach, learn and share their own traditions, flourishing in a street culture outside the purview of adults. This is also ideal where it needs to be collected; as Iona and Peter Opie demonstrated in their pioneering book Children's Games in Street and Playground. Here the social group of children is studied on its own terms, not as a derivative of adult social groups. It is shown that the culture of children is quite distinctive; it is generally unnoticed by the sophisticated world of adults, and quite as little affected by it.<br><br>
+                Of particular interest to folklorists here is the mode of transmission of these artifacts; this lore circulates exclusively within an informal pre-literate children's network or folk group. It does not include artifacts taught to children by adults. However children can take the taught and teach it further to other children, turning it into childlore. Or they can take the artifacts and turn them into something else; so Old McDonald's farm is transformed from animal noises to the scatological version of animal poop. This childlore is characterized by "its lack of dependence on literary and fixed form. Children…operate among themselves in a world of informal and oral communication, unimpeded by the necessity of maintaining and transmitting information by written means". This is as close as folklorists can come to observing the transmission and social function of this folk knowledge before the spread of literacy during the 19th century.<br><br>
+                As we have seen with the other genres, the original collections of children's lore and games in the 19th century was driven by a fear that the culture of childhood would die out. Early folklorists, among them Alice Gomme in Britain and William Wells Newell in the United States, felt a need to capture the unstructured and unsupervised street life and activities of children before it was lost. This fear proved to be unfounded. In a comparison of any modern school playground during recess and the painting of "Children's Games" by Pieter Breugel the Elder we can see that the activity level is similar, and many of the games from the 1560 painting are recognizable and comparable to modern variations still played today.<br><br>
+                These same artifacts of childlore, in innumerable variations, also continue to serve the same function of learning and practicing skills needed for growth. So bouncing and swinging rhythms and rhymes encourage development of balance and coordination in infants and children. Verbal rhymes like Peter Piper picked... serve to increase both the oral and aural acuity of children. Songs and chants, accessing a different part of the brain, are used to memorize series (Alphabet song). They also provide the necessary beat to complex physical rhythms and movements, be it hand-clapping, jump roping, or ball bouncing. Furthermore, many physical games are used to develop strength, coordination and endurance of the players. For some team games, negotiations about the rules can run on longer than the game itself as social skills are rehearsed. Even as we are just now uncovering the neuroscience that undergirds the developmental function of this childlore, the artifacts themselves have been in play for centuries.<br><br>
+                Below is listed just a small sampling of types and examples of childlore and games.<br><br>
+            </p>
+            <ul class="multi-column-list">
+                <li>Buck buck</li>
+                <li>Counting rhymes</li>
+                <li>Dandling rhymes</li>
+                <li>Finger and toe rhymes</li>
+                <li>Counting-out games</li>
+                <li>Dreidel</li>
+                <li>Eeny, meeny, miny, moe</li>
+                <li>Games</li>
+                <li>Traditional games</li>
+                <li>London Bridge Is Falling Down</li>
+                <li>Lullabies</li>
+                <li>Nursery rhymes</li>
+                <li>Playground songs</li>
+                <li>Ball-bouncing rhymes</li>
+                <li>Rhymes</li>
+                <li>Riddles</li>
+                <li>Ring a Ring o Roses</li>
+                <li>Jump-rope rhymes</li>
+                <li>Stickball</li>
+                <li>Street games</li>
+            </ul>              
+        </div>
+
+        <div class="image-section">
+            <img src="images/Childlore 1.jpg" alt="Folklore Illustration">
+            <img src="images/Childlore 2.jpg" alt="Folklore Illustration">
+            <img src="images/Childlore 3.jpg" alt="Folklore Illustration">
+        </div>
+    </div>
+
+    <footer>
+        Designed by Leon Zhao - Interaction Foundations Spring 2025
+    </footer>
+
+</body>
+<script>
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('show');
+    }
+    document.querySelectorAll(".nav-group a").forEach(link => {
+    const chars = link.textContent.trim().split("");
+    link.innerHTML = chars.map((char, i) => `<span style="--i:${i}">${char}</span>`).join("");
+    });
+</script>
+</html>
